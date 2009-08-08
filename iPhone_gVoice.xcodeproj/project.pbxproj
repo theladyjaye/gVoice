@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		D73F32681024E43300E7C117 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F32661024E43300E7C117 /* NavigationView.m */; };
+		D73F32691024E43300E7C117 /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73F32671024E43300E7C117 /* NavigationView.xib */; };
+		D73F32E81024E88B00E7C117 /* DialerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D73F32E61024E88B00E7C117 /* DialerView.m */; };
+		D73F32E91024E88B00E7C117 /* DialerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D73F32E71024E88B00E7C117 /* DialerView.xib */; };
+		D74A4CDB1025EE7B00CBC3E5 /* dialer_header.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CDA1025EE7B00CBC3E5 /* dialer_header.png */; };
+		D74A4CEF1025F05300CBC3E5 /* btn_eight.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE31025F05300CBC3E5 /* btn_eight.png */; };
+		D74A4CF01025F05300CBC3E5 /* btn_five.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE41025F05300CBC3E5 /* btn_five.png */; };
+		D74A4CF11025F05300CBC3E5 /* btn_four.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE51025F05300CBC3E5 /* btn_four.png */; };
+		D74A4CF21025F05300CBC3E5 /* btn_nine.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE61025F05300CBC3E5 /* btn_nine.png */; };
+		D74A4CF31025F05300CBC3E5 /* btn_one.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE71025F05300CBC3E5 /* btn_one.png */; };
+		D74A4CF41025F05300CBC3E5 /* btn_pound.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE81025F05300CBC3E5 /* btn_pound.png */; };
+		D74A4CF51025F05300CBC3E5 /* btn_seven.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CE91025F05300CBC3E5 /* btn_seven.png */; };
+		D74A4CF61025F05300CBC3E5 /* btn_six.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CEA1025F05300CBC3E5 /* btn_six.png */; };
+		D74A4CF71025F05300CBC3E5 /* btn_star.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CEB1025F05300CBC3E5 /* btn_star.png */; };
+		D74A4CF81025F05300CBC3E5 /* btn_three.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CEC1025F05300CBC3E5 /* btn_three.png */; };
+		D74A4CF91025F05300CBC3E5 /* btn_two.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CED1025F05300CBC3E5 /* btn_two.png */; };
+		D74A4CFA1025F05300CBC3E5 /* btn_zero.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CEE1025F05300CBC3E5 /* btn_zero.png */; };
+		D74A4D001025F24000CBC3E5 /* btn_add.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CFD1025F24000CBC3E5 /* btn_add.png */; };
+		D74A4D011025F24000CBC3E5 /* btn_call.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CFE1025F24000CBC3E5 /* btn_call.png */; };
+		D74A4D021025F24000CBC3E5 /* btn_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = D74A4CFF1025F24000CBC3E5 /* btn_delete.png */; };
+		D79021DB1025F7DA00499269 /* btn_add_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021CC1025F7DA00499269 /* btn_add_selected.png */; };
+		D79021DC1025F7DA00499269 /* btn_call_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021CD1025F7DA00499269 /* btn_call_selected.png */; };
+		D79021DD1025F7DA00499269 /* btn_delete_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021CE1025F7DA00499269 /* btn_delete_selected.png */; };
+		D79021DE1025F7DA00499269 /* btn_eight_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021CF1025F7DA00499269 /* btn_eight_selected.png */; };
+		D79021DF1025F7DA00499269 /* btn_five_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D01025F7DA00499269 /* btn_five_selected.png */; };
+		D79021E01025F7DA00499269 /* btn_four_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D11025F7DA00499269 /* btn_four_selected.png */; };
+		D79021E11025F7DA00499269 /* btn_nine_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D21025F7DA00499269 /* btn_nine_selected.png */; };
+		D79021E21025F7DA00499269 /* btn_one_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D31025F7DA00499269 /* btn_one_selected.png */; };
+		D79021E31025F7DA00499269 /* btn_pound_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D41025F7DA00499269 /* btn_pound_selected.png */; };
+		D79021E41025F7DA00499269 /* btn_seven_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D51025F7DA00499269 /* btn_seven_selected.png */; };
+		D79021E51025F7DA00499269 /* btn_six_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D61025F7DA00499269 /* btn_six_selected.png */; };
+		D79021E61025F7DA00499269 /* btn_star_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D71025F7DA00499269 /* btn_star_selected.png */; };
+		D79021E71025F7DA00499269 /* btn_three_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D81025F7DA00499269 /* btn_three_selected.png */; };
+		D79021E81025F7DA00499269 /* btn_two_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021D91025F7DA00499269 /* btn_two_selected.png */; };
+		D79021E91025F7DA00499269 /* btn_zero_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D79021DA1025F7DA00499269 /* btn_zero_selected.png */; };
+		D79021F31025FA1100499269 /* SettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79021F11025FA1100499269 /* SettingsView.m */; };
+		D79021F41025FA1100499269 /* SettingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D79021F21025FA1100499269 /* SettingsView.xib */; };
+		D79021FB1026000A00499269 /* GVAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = D79021FA1026000A00499269 /* GVAuthorization.m */; };
+		D7902355102640F600499269 /* GVCall.m in Sources */ = {isa = PBXBuildFile; fileRef = D7902354102640F600499269 /* GVCall.m */; };
+		D790242C1026525900499269 /* GVGoogleVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = D790242B1026525900499269 /* GVGoogleVoice.m */; };
+		D7902448102655E100499269 /* GVOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D7902447102655E100499269 /* GVOperation.m */; };
+		D79024511026581A00499269 /* GVAuthorizationOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = D79024501026581A00499269 /* GVAuthorizationOperation.m */; };
+		D790281F1026942E00499269 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = D790281E1026942E00499269 /* AppSettings.m */; };
+		D7BF62F41027B41B007FFE14 /* GVSMS.m in Sources */ = {isa = PBXBuildFile; fileRef = D7BF62F31027B41B007FFE14 /* GVSMS.m */; };
+		D7E69BFE1027DD710079132F /* SMSView.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E69BFC1027DD710079132F /* SMSView.m */; };
+		D7E69BFF1027DD710079132F /* SMSView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7E69BFD1027DD710079132F /* SMSView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* iPhone_gVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhone_gVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* iPhone_gVoice_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhone_gVoice_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* iPhone_gVoice-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "iPhone_gVoice-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D73F32651024E43300E7C117 /* NavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
+		D73F32661024E43300E7C117 /* NavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
+		D73F32671024E43300E7C117 /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
+		D73F32E51024E88B00E7C117 /* DialerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialerView.h; sourceTree = "<group>"; };
+		D73F32E61024E88B00E7C117 /* DialerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialerView.m; sourceTree = "<group>"; };
+		D73F32E71024E88B00E7C117 /* DialerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialerView.xib; sourceTree = "<group>"; };
+		D74A4CDA1025EE7B00CBC3E5 /* dialer_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialer_header.png; sourceTree = "<group>"; };
+		D74A4CE31025F05300CBC3E5 /* btn_eight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_eight.png; sourceTree = "<group>"; };
+		D74A4CE41025F05300CBC3E5 /* btn_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_five.png; sourceTree = "<group>"; };
+		D74A4CE51025F05300CBC3E5 /* btn_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_four.png; sourceTree = "<group>"; };
+		D74A4CE61025F05300CBC3E5 /* btn_nine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_nine.png; sourceTree = "<group>"; };
+		D74A4CE71025F05300CBC3E5 /* btn_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_one.png; sourceTree = "<group>"; };
+		D74A4CE81025F05300CBC3E5 /* btn_pound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pound.png; sourceTree = "<group>"; };
+		D74A4CE91025F05300CBC3E5 /* btn_seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_seven.png; sourceTree = "<group>"; };
+		D74A4CEA1025F05300CBC3E5 /* btn_six.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_six.png; sourceTree = "<group>"; };
+		D74A4CEB1025F05300CBC3E5 /* btn_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star.png; sourceTree = "<group>"; };
+		D74A4CEC1025F05300CBC3E5 /* btn_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_three.png; sourceTree = "<group>"; };
+		D74A4CED1025F05300CBC3E5 /* btn_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_two.png; sourceTree = "<group>"; };
+		D74A4CEE1025F05300CBC3E5 /* btn_zero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_zero.png; sourceTree = "<group>"; };
+		D74A4CFD1025F24000CBC3E5 /* btn_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_add.png; sourceTree = "<group>"; };
+		D74A4CFE1025F24000CBC3E5 /* btn_call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_call.png; sourceTree = "<group>"; };
+		D74A4CFF1025F24000CBC3E5 /* btn_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_delete.png; sourceTree = "<group>"; };
+		D79021CC1025F7DA00499269 /* btn_add_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_add_selected.png; sourceTree = "<group>"; };
+		D79021CD1025F7DA00499269 /* btn_call_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_call_selected.png; sourceTree = "<group>"; };
+		D79021CE1025F7DA00499269 /* btn_delete_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_delete_selected.png; sourceTree = "<group>"; };
+		D79021CF1025F7DA00499269 /* btn_eight_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_eight_selected.png; sourceTree = "<group>"; };
+		D79021D01025F7DA00499269 /* btn_five_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_five_selected.png; sourceTree = "<group>"; };
+		D79021D11025F7DA00499269 /* btn_four_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_four_selected.png; sourceTree = "<group>"; };
+		D79021D21025F7DA00499269 /* btn_nine_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_nine_selected.png; sourceTree = "<group>"; };
+		D79021D31025F7DA00499269 /* btn_one_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_one_selected.png; sourceTree = "<group>"; };
+		D79021D41025F7DA00499269 /* btn_pound_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_pound_selected.png; sourceTree = "<group>"; };
+		D79021D51025F7DA00499269 /* btn_seven_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_seven_selected.png; sourceTree = "<group>"; };
+		D79021D61025F7DA00499269 /* btn_six_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_six_selected.png; sourceTree = "<group>"; };
+		D79021D71025F7DA00499269 /* btn_star_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_star_selected.png; sourceTree = "<group>"; };
+		D79021D81025F7DA00499269 /* btn_three_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_three_selected.png; sourceTree = "<group>"; };
+		D79021D91025F7DA00499269 /* btn_two_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_two_selected.png; sourceTree = "<group>"; };
+		D79021DA1025F7DA00499269 /* btn_zero_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_zero_selected.png; sourceTree = "<group>"; };
+		D79021F01025FA1100499269 /* SettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsView.h; sourceTree = "<group>"; };
+		D79021F11025FA1100499269 /* SettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsView.m; sourceTree = "<group>"; };
+		D79021F21025FA1100499269 /* SettingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsView.xib; sourceTree = "<group>"; };
+		D79021F91026000A00499269 /* GVAuthorization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVAuthorization.h; sourceTree = "<group>"; };
+		D79021FA1026000A00499269 /* GVAuthorization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVAuthorization.m; sourceTree = "<group>"; };
+		D79021FC1026002400499269 /* GVCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVCommand.h; sourceTree = "<group>"; };
+		D790221E1026017000499269 /* GVAPISettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVAPISettings.h; sourceTree = "<group>"; };
+		D7902353102640F600499269 /* GVCall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVCall.h; sourceTree = "<group>"; };
+		D7902354102640F600499269 /* GVCall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVCall.m; sourceTree = "<group>"; };
+		D790242A1026525900499269 /* GVGoogleVoice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVGoogleVoice.h; sourceTree = "<group>"; };
+		D790242B1026525900499269 /* GVGoogleVoice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVGoogleVoice.m; sourceTree = "<group>"; };
+		D7902446102655E100499269 /* GVOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVOperation.h; sourceTree = "<group>"; };
+		D7902447102655E100499269 /* GVOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVOperation.m; sourceTree = "<group>"; };
+		D790244F1026581A00499269 /* GVAuthorizationOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVAuthorizationOperation.h; sourceTree = "<group>"; };
+		D79024501026581A00499269 /* GVAuthorizationOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVAuthorizationOperation.m; sourceTree = "<group>"; };
+		D79024F610265D9200499269 /* GVOperationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVOperationDelegate.h; sourceTree = "<group>"; };
+		D79026D41026754100499269 /* GVAuthorizationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVAuthorizationDelegate.h; sourceTree = "<group>"; };
+		D790281D1026942E00499269 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		D790281E1026942E00499269 /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		D7BF62F21027B41B007FFE14 /* GVSMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVSMS.h; sourceTree = "<group>"; };
+		D7BF62F31027B41B007FFE14 /* GVSMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVSMS.m; sourceTree = "<group>"; };
+		D7E69BFB1027DD710079132F /* SMSView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSView.h; sourceTree = "<group>"; };
+		D7E69BFC1027DD710079132F /* SMSView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSView.m; sourceTree = "<group>"; };
+		D7E69BFD1027DD710079132F /* SMSView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SMSView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D79022591026347500499269 /* Utils */,
+				D79021F71025FFC400499269 /* API */,
+				D73F32641024E41600E7C117 /* Views */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* iPhone_gVoice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* iPhone_gVoice_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D74A4CD91025EE6E00CBC3E5 /* Bitmaps */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* iPhone_gVoice-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D73F32641024E41600E7C117 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7E69BF51027DD450079132F /* SMS */,
+				D79021EF1025FA0100499269 /* Settings */,
+				D73F32E41024E87800E7C117 /* Dialer */,
+				D73F32E31024E86E00E7C117 /* Navigation */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D73F32E31024E86E00E7C117 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				D73F32651024E43300E7C117 /* NavigationView.h */,
+				D73F32661024E43300E7C117 /* NavigationView.m */,
+				D73F32671024E43300E7C117 /* NavigationView.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		D73F32E41024E87800E7C117 /* Dialer */ = {
+			isa = PBXGroup;
+			children = (
+				D73F32E51024E88B00E7C117 /* DialerView.h */,
+				D73F32E61024E88B00E7C117 /* DialerView.m */,
+				D73F32E71024E88B00E7C117 /* DialerView.xib */,
+			);
+			name = Dialer;
+			sourceTree = "<group>";
+		};
+		D74A4CD91025EE6E00CBC3E5 /* Bitmaps */ = {
+			isa = PBXGroup;
+			children = (
+				D74A4CE21025F04300CBC3E5 /* Buttons */,
+				D74A4CDA1025EE7B00CBC3E5 /* dialer_header.png */,
+			);
+			name = Bitmaps;
+			sourceTree = "<group>";
+		};
+		D74A4CE21025F04300CBC3E5 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D79021CC1025F7DA00499269 /* btn_add_selected.png */,
+				D79021CD1025F7DA00499269 /* btn_call_selected.png */,
+				D79021CE1025F7DA00499269 /* btn_delete_selected.png */,
+				D79021CF1025F7DA00499269 /* btn_eight_selected.png */,
+				D79021D01025F7DA00499269 /* btn_five_selected.png */,
+				D79021D11025F7DA00499269 /* btn_four_selected.png */,
+				D79021D21025F7DA00499269 /* btn_nine_selected.png */,
+				D79021D31025F7DA00499269 /* btn_one_selected.png */,
+				D79021D41025F7DA00499269 /* btn_pound_selected.png */,
+				D79021D51025F7DA00499269 /* btn_seven_selected.png */,
+				D79021D61025F7DA00499269 /* btn_six_selected.png */,
+				D79021D71025F7DA00499269 /* btn_star_selected.png */,
+				D79021D81025F7DA00499269 /* btn_three_selected.png */,
+				D79021D91025F7DA00499269 /* btn_two_selected.png */,
+				D79021DA1025F7DA00499269 /* btn_zero_selected.png */,
+				D74A4CFD1025F24000CBC3E5 /* btn_add.png */,
+				D74A4CFE1025F24000CBC3E5 /* btn_call.png */,
+				D74A4CFF1025F24000CBC3E5 /* btn_delete.png */,
+				D74A4CE31025F05300CBC3E5 /* btn_eight.png */,
+				D74A4CE41025F05300CBC3E5 /* btn_five.png */,
+				D74A4CE51025F05300CBC3E5 /* btn_four.png */,
+				D74A4CE61025F05300CBC3E5 /* btn_nine.png */,
+				D74A4CE71025F05300CBC3E5 /* btn_one.png */,
+				D74A4CE81025F05300CBC3E5 /* btn_pound.png */,
+				D74A4CE91025F05300CBC3E5 /* btn_seven.png */,
+				D74A4CEA1025F05300CBC3E5 /* btn_six.png */,
+				D74A4CEB1025F05300CBC3E5 /* btn_star.png */,
+				D74A4CEC1025F05300CBC3E5 /* btn_three.png */,
+				D74A4CED1025F05300CBC3E5 /* btn_two.png */,
+				D74A4CEE1025F05300CBC3E5 /* btn_zero.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		D79021EF1025FA0100499269 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D79021F01025FA1100499269 /* SettingsView.h */,
+				D79021F11025FA1100499269 /* SettingsView.m */,
+				D79021F21025FA1100499269 /* SettingsView.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		D79021F71025FFC400499269 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D7902445102655D500499269 /* Operations */,
+				D79021F81025FFF300499269 /* Commands */,
+				D790242A1026525900499269 /* GVGoogleVoice.h */,
+				D790242B1026525900499269 /* GVGoogleVoice.m */,
+				D79026D41026754100499269 /* GVAuthorizationDelegate.h */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		D79021F81025FFF300499269 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				D79021F91026000A00499269 /* GVAuthorization.h */,
+				D79021FA1026000A00499269 /* GVAuthorization.m */,
+				D79021FC1026002400499269 /* GVCommand.h */,
+				D790221E1026017000499269 /* GVAPISettings.h */,
+				D7902353102640F600499269 /* GVCall.h */,
+				D7902354102640F600499269 /* GVCall.m */,
+				D7BF62F21027B41B007FFE14 /* GVSMS.h */,
+				D7BF62F31027B41B007FFE14 /* GVSMS.m */,
+			);
+			name = Commands;
+			sourceTree = "<group>";
+		};
+		D79022591026347500499269 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D790281D1026942E00499269 /* AppSettings.h */,
+				D790281E1026942E00499269 /* AppSettings.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		D7902445102655D500499269 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				D7902446102655E100499269 /* GVOperation.h */,
+				D7902447102655E100499269 /* GVOperation.m */,
+				D790244F1026581A00499269 /* GVAuthorizationOperation.h */,
+				D79024501026581A00499269 /* GVAuthorizationOperation.m */,
+				D79024F610265D9200499269 /* GVOperationDelegate.h */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		D7E69BF51027DD450079132F /* SMS */ = {
+			isa = PBXGroup;
+			children = (
+				D7E69BFB1027DD710079132F /* SMSView.h */,
+				D7E69BFC1027DD710079132F /* SMSView.m */,
+				D7E69BFD1027DD710079132F /* SMSView.xib */,
+			);
+			name = SMS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* iPhone_gVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhone_gVoice" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPhone_gVoice;
+			productName = iPhone_gVoice;
+			productReference = 1D6058910D05DD3D006BFB54 /* iPhone_gVoice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhone_gVoice" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* iPhone_gVoice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				D73F32691024E43300E7C117 /* NavigationView.xib in Resources */,
+				D73F32E91024E88B00E7C117 /* DialerView.xib in Resources */,
+				D74A4CDB1025EE7B00CBC3E5 /* dialer_header.png in Resources */,
+				D74A4CEF1025F05300CBC3E5 /* btn_eight.png in Resources */,
+				D74A4CF01025F05300CBC3E5 /* btn_five.png in Resources */,
+				D74A4CF11025F05300CBC3E5 /* btn_four.png in Resources */,
+				D74A4CF21025F05300CBC3E5 /* btn_nine.png in Resources */,
+				D74A4CF31025F05300CBC3E5 /* btn_one.png in Resources */,
+				D74A4CF41025F05300CBC3E5 /* btn_pound.png in Resources */,
+				D74A4CF51025F05300CBC3E5 /* btn_seven.png in Resources */,
+				D74A4CF61025F05300CBC3E5 /* btn_six.png in Resources */,
+				D74A4CF71025F05300CBC3E5 /* btn_star.png in Resources */,
+				D74A4CF81025F05300CBC3E5 /* btn_three.png in Resources */,
+				D74A4CF91025F05300CBC3E5 /* btn_two.png in Resources */,
+				D74A4CFA1025F05300CBC3E5 /* btn_zero.png in Resources */,
+				D74A4D001025F24000CBC3E5 /* btn_add.png in Resources */,
+				D74A4D011025F24000CBC3E5 /* btn_call.png in Resources */,
+				D74A4D021025F24000CBC3E5 /* btn_delete.png in Resources */,
+				D79021DB1025F7DA00499269 /* btn_add_selected.png in Resources */,
+				D79021DC1025F7DA00499269 /* btn_call_selected.png in Resources */,
+				D79021DD1025F7DA00499269 /* btn_delete_selected.png in Resources */,
+				D79021DE1025F7DA00499269 /* btn_eight_selected.png in Resources */,
+				D79021DF1025F7DA00499269 /* btn_five_selected.png in Resources */,
+				D79021E01025F7DA00499269 /* btn_four_selected.png in Resources */,
+				D79021E11025F7DA00499269 /* btn_nine_selected.png in Resources */,
+				D79021E21025F7DA00499269 /* btn_one_selected.png in Resources */,
+				D79021E31025F7DA00499269 /* btn_pound_selected.png in Resources */,
+				D79021E41025F7DA00499269 /* btn_seven_selected.png in Resources */,
+				D79021E51025F7DA00499269 /* btn_six_selected.png in Resources */,
+				D79021E61025F7DA00499269 /* btn_star_selected.png in Resources */,
+				D79021E71025F7DA00499269 /* btn_three_selected.png in Resources */,
+				D79021E81025F7DA00499269 /* btn_two_selected.png in Resources */,
+				D79021E91025F7DA00499269 /* btn_zero_selected.png in Resources */,
+				D79021F41025FA1100499269 /* SettingsView.xib in Resources */,
+				D7E69BFF1027DD710079132F /* SMSView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				D73F32681024E43300E7C117 /* NavigationView.m in Sources */,
+				D73F32E81024E88B00E7C117 /* DialerView.m in Sources */,
+				D79021F31025FA1100499269 /* SettingsView.m in Sources */,
+				D79021FB1026000A00499269 /* GVAuthorization.m in Sources */,
+				D7902355102640F600499269 /* GVCall.m in Sources */,
+				D790242C1026525900499269 /* GVGoogleVoice.m in Sources */,
+				D7902448102655E100499269 /* GVOperation.m in Sources */,
+				D79024511026581A00499269 /* GVAuthorizationOperation.m in Sources */,
+				D790281F1026942E00499269 /* AppSettings.m in Sources */,
+				D7BF62F41027B41B007FFE14 /* GVSMS.m in Sources */,
+				D7E69BFE1027DD710079132F /* SMSView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhone_gVoice_Prefix.pch;
+				INFOPLIST_FILE = "iPhone_gVoice-Info.plist";
+				PRODUCT_NAME = iPhone_gVoice;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iPhone_gVoice_Prefix.pch;
+				INFOPLIST_FILE = "iPhone_gVoice-Info.plist";
+				PRODUCT_NAME = iPhone_gVoice;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "iPhone_gVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "iPhone_gVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
